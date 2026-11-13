@@ -1,0 +1,56 @@
+.whychavan-section {
+  padding: 5rem 0;
+  background-color: var(--co-white);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.trust-card {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border-radius: var(--radius-xl);
+  background: var(--co-gray-50);
+  border: 1px solid var(--co-gray-200);
+  transition: all var(--transition-normal);
+}
+
+.trust-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--co-blue-primary);
+}
+
+.trust-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: var(--co-blue-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trust-icon {
+  color: var(--co-blue-primary);
+}
+
+.trust-card h3 {
+  font-size: 1.25rem;
+  color: var(--co-blue-dark);
+  margin-bottom: 1rem;
+}
+
+.trust-card p {
+  color: var(--co-gray-800);
+}
+
+@media (max-width: 900px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+}
